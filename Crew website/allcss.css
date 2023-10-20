@@ -1,0 +1,197 @@
+.title {
+  color: black;
+  text-shadow: 1px 1px 2px white, 0 0 0.625rem palegreen,
+    0 0 0.15625rem darkblue;
+  font-size: 3.75rem; /* 60px converted to rem */
+  text-align: center;
+  padding: 1.875rem; /* 30px converted to rem */
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-style: italic;
+}
+
+.container {
+  padding-top: 1.25rem; /* 20px converted to rem */
+}
+
+.image-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.image-text-container__image {
+  width: 31.25rem; /* 500px converted to rem */
+  height: 21.875rem; /* 350px converted to rem */
+  padding: 0.625rem; /* 10px converted to rem */
+  margin-bottom: 7.5rem; /* 120px converted to rem */
+  border-radius: 1.875rem; /* 30px converted to rem */
+  box-shadow: 0.625rem 0.625rem 0.5rem #888888;
+}
+
+.image-text-container__text {
+  margin-left: 3.75rem; /* 60px converted to rem */
+  line-height: 1.7;
+  font-size: 1.125rem; /* 18px converted to rem */
+  margin-bottom: 7.5rem; /* 120px converted to rem */
+  word-spacing: 0.33rem;
+}
+
+.image-text-container__text-left {
+  margin-right: 3.75rem; /* 60px converted to rem */
+  line-height: 1.7;
+  margin-bottom: 7.5rem; /* 120px converted to rem */
+  font-size: 1.125rem; /* 18px converted to rem */
+  word-spacing: 0.33rem;
+}
+
+#goback {
+  background-color: #007bff;
+  color: white;
+  padding: 0.5rem 1.5rem; /* Adjust padding for all sides */
+  border: none;
+  border-radius: 1.6875rem; /* 27px converted to rem */
+  margin-right: 5.1875rem; /* 82px converted to rem */
+  cursor: pointer;
+  margin-top: 1.875rem; /* 30px converted to rem */
+  margin-left: 10rem; /* 160px converted to rem */
+  text-decoration: none;
+  font-size: 1.25rem; /* 20px converted to rem */
+}
+
+#goback:hover {
+  background-color: #0056b3;
+  color: white;
+}
+@media screen and (max-width: 600px) {
+  /* For the .image-text-container */
+
+  .image-text-container__image,
+  .image-text-container__text,
+  .image-text-container__text-left {
+    width: 100%; /* Make them occupy the whole line */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+  }
+
+  /* For the #goback button */
+  #goback {
+    margin-right: 0;
+    padding: 5px 10px; /* Adjust the padding for the button */
+    margin-left: 10px;
+  }
+
+  /* For the .title */
+  .title {
+    font-size: 36px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  /* For other headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 24px; /* Adjust font size */
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .image-text-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center both elements horizontally */
+  }
+
+  /* For .image-text-container .img and .para */
+  .image-text-container .img,
+  .image-text-container .para {
+    width: 100%; /* Make them occupy the whole line */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+  }
+
+  /* For .image-text-container .para in the second row */
+  .image-text-container:nth-child(2) .para {
+    margin-top: 20px; /* Increase the gap between image and paragraph */
+  }
+
+  /* For .image-text-container .img in the second row */
+  .image-text-container:nth-child(2) .img {
+    order: -1; /* Move the image to the top */
+  }
+
+  .image-text-container__text {
+    margin-top: 20px; /* Adjust the value as needed */
+  }
+  .image-text-container__image {
+    width: 100%; /* Make the image occupy the whole line */
+    height: auto; /* Maintain aspect ratio */
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1200px) {
+  /* For the .image-text-container */
+
+  .image-text-container__image,
+  .image-text-container__text,
+  .image-text-container__text-left {
+    width: 100%; /* Make them occupy the whole line */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+  }
+
+  /* For the #goback button */
+  #goback {
+    margin-right: 0;
+    padding: 5px 10px; /* Adjust the padding for the button */
+    margin-left: 10px;
+  }
+
+  /* For the .title */
+  .title {
+    font-size: 36px; /* Adjust font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  /* For other headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 24px; /* Adjust font size */
+    margin: 10px 0; /* Adjust margins */
+  }
+
+  .image-text-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center both elements horizontally */
+  }
+
+  /* For .image-text-container .img and .para */
+  .image-text-container .img,
+  .image-text-container .para {
+    width: 100%; /* Make them occupy the whole line */
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+  }
+
+  /* For .image-text-container .para in the second row */
+  .image-text-container:nth-child(2) .para {
+    margin-top: 20px; /* Increase the gap between image and paragraph */
+  }
+
+  /* For .image-text-container .img in the second row */
+  .image-text-container:nth-child(2) .img {
+    order: -1; /* Move the image to the top */
+  }
+
+  .image-text-container__text {
+    margin-top: 20px; /* Adjust the value as needed */
+  }
+  .image-text-container__image {
+    width: 100%; /* Make the image occupy the whole line */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

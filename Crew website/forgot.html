@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forgot Password</title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap/dist/js/bootstrap.bundle" />
+    <link rel="stylesheet" href="forgot.css" />
+  </head>
+  <body>
+    <a href="login.html" id="backtologinbtn" class="btn btn-primary">
+      Back to login
+    </a>
+    <h1 class="text-center">Oops! Don't worry</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="image-container">
+            <img src="images/forgot.jpg" alt="Forgot Password Image" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h2 class="text-center mb-4">Forgot Password</h2>
+          <form action="#" method="post" onsubmit="return validateForm()">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                autocomplete="off"
+              />
+              <span id="email-error" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">
+              Reset Password
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function validateForm() {
+        // Get the value of the email input
+        var email = document.getElementById("email").value;
+
+        // Check if the email is empty
+        if (email.trim() === "") {
+          // Display an error message
+          document.getElementById("email-error").textContent =
+            "Email cannot be empty";
+          return false; // Prevent form submission
+        }
+
+        // If the email is not empty, clear any previous error message
+        document.getElementById("email-error").textContent = "";
+
+        // Continue with form submission
+        return true;
+      }
+    </script>
+  </body>
+</html>

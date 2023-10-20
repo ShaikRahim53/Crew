@@ -1,0 +1,78 @@
+#about {
+  cursor: default;
+}
+
+#about .section-title {
+  margin-top: 0;
+}
+
+#about .team-member {
+  border: 1px solid #ccc;
+  padding: 1.25rem; /* Converted to rem */
+  margin-bottom: 1.25rem; /* Converted to rem */
+  text-align: center;
+}
+
+#about .team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-bottom: 0.625rem; /* Converted to rem */
+}
+
+#about h1 {
+  text-align: center;
+  margin-top: 1.25rem; /* Converted to rem */
+  margin-bottom: 1.25rem; /* Converted to rem */
+}
+
+#about .head {
+  text-align: center;
+  font-size: 2.8125rem; /* Converted to rem */
+  margin-top: 3.875rem; /* Converted to rem */
+  margin-bottom: 1.875rem; /* Converted to rem */
+}
+
+#about p {
+  line-height: 1.75;
+  font-size: 1.125rem; /* Converted to rem */
+  word-spacing: 0.2rem;
+}
+
+@media screen and (max-width: 1240px) {
+  /* Responsive styles for headings, paragraphs, and team-members */
+  #about .container .row .col-4 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .team-member img {
+    max-width: 70%; /* Adjust the width as needed */
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  /* Additional responsive styles for even smaller screens */
+  #about h1 {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
+  .team-member img {
+    max-width: 60%; /* Adjust the width as needed */
+    height: auto;
+  }
+  #about .head {
+    font-size: 2rem; /* Adjust the font size for smaller screens */
+  }
+
+  #about p {
+    font-size: 1rem; /* Adjust the font size for smaller screens */
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1241px) {
+  /* Responsive styles for screen sizes between 992px and 1241px */
+  .team-member img {
+    max-width: 50%; /* Adjust the width as needed */
+    height: auto;
+  }
+}

@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*-------------------HOME----------------*/
+.navbar a {
+  font-size: 1rem; /* Converted to rem */
+}
+
+.navbar a:hover {
+  color: #007bff;
+  border-bottom: 1px solid #007bff;
+}
+
+img {
+  mix-blend-mode: multiply;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.navbar-brand {
+  font-size: 1.25rem; /* Converted to rem */
+}
+
+#home {
+  width: 100%;
+  height: 80vh;
+  margin-top: 8.75%; /* Converted to percentage (70px / 800px) */
+}
+
+#home h1 {
+  margin: 3.75% 0 0.625% 0; /* Converted to percentage */
+  font-size: 4.75vw; /* Converted to vw */
+  font-weight: 800;
+  color: black;
+}
+
+#home .brand-name {
+  color: #007bff;
+}
+
+#home h2 {
+  font-size: 1.725rem; /* Converted to rem */
+  color: rgb(60, 58, 58);
+}
+
+#home .btn-lets-go {
+  font-weight: 500;
+  font-size: 1rem; /* Converted to rem */
+  letter-spacing: 0.0625em; /* Converted to em */
+  display: inline-block;
+  padding: 0.4375rem 1.5625rem; /* Converted to rem */
+  border-radius: 1.25rem; /* Converted to rem */
+  transition: 0.5s;
+  color: #007bff;
+  border: 0.125rem solid rgb(21, 21, 21);
+  text-decoration: none;
+}
+
+#home .btn-lets-go:hover {
+  background-color: #007bff;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+#home .img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: -10%; /* Adjust this value as needed */
+}
+
+#home-img {
+  text-align: right;
+}
+
+#home .header-img {
+  margin-top: 2.5%; /* Converted to percentage (44px / 800px) */
+  margin-bottom: 9%;
+}
+
+@media screen and (max-width: 600px) {
+  /* ... (other styles) ... */
+
+  #home .col-md-6 {
+    text-align: center; /* Center the content */
+  }
+
+  #home h1 {
+    margin: 1% 0 1% 0; /* Adjusted margin for smaller screens */
+    font-size: 8vw; /* Adjusted font size for smaller screens */
+  }
+
+  #home h2 {
+    font-size: 1.25rem; /* Adjusted font size for smaller screens */
+  }
+
+  #home .btn-lets-go {
+    font-size: 0.875rem; /* Adjusted font size for smaller screens */
+    padding: 0.3125rem 1.25rem; /* Adjusted padding for smaller screens */
+    border-radius: 0.9375rem; /* Adjusted border-radius for smaller screens */
+    margin-bottom: 40%;
+  }
+
+  #home .img {
+    top: 10%; /* Move image down for smaller screens */
+  }
+
+  #home .header-img {
+    margin-top: 45%; /* Adjusted margin for smaller screens */
+    margin-bottom: 1%; /* Adjusted margin for smaller screens */
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  /* Center the container */
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+  }
+
+  /* Adjust styles for headings */
+  #home h1 {
+    font-size: 5.5vw; /* Increased font size for screens between 600px and 768px */
+    font-weight: 700;
+    color: black;
+    margin: 2% 0;
+  }
+
+  #home .brand-name {
+    font-size: 5.5vw; /* Increased font size for screens between 600px and 768px */
+    color: #007bff;
+  }
+
+  #home h2 {
+    font-size: 2.5vw; /* Increased font size for screens between 600px and 768px */
+    color: rgb(60, 58, 58);
+    margin-top: 2%;
+  }
+
+  /* Adjust styles for the button */
+  #home .btn-lets-go {
+    font-weight: 500;
+    font-size: 1.8vw; /* Increased font size for screens between 600px and 768px */
+    letter-spacing: 0.05em;
+    display: inline-block;
+    padding: 1% 4%;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #007bff;
+    border: 0.1rem solid rgb(21, 21, 21);
+    text-decoration: none;
+    margin-top: 0.2%;
+  }
+
+  /* Adjust image margin */
+  #home .img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0; /* Reset the top margin for the image */
+  }
+
+  /* Adjust margin for the header image */
+  #home .header-img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  /* Center the container */
+  #home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+  }
+
+  /* Adjust styles for headings */
+  #home h1 {
+    font-size: 5.5vw; /* Increased font size for screens between 768px and 992px */
+    font-weight: 700;
+    color: black;
+    margin: 2% 0;
+  }
+
+  #home .brand-name {
+    font-size: 5.5vw; /* Increased font size for screens between 768px and 992px */
+    color: #007bff;
+  }
+
+  #home h2 {
+    font-size: 2.5vw; /* Increased font size for screens between 768px and 992px */
+    color: rgb(60, 58, 58);
+    margin-top: 2%;
+  }
+
+  /* Adjust styles for the button */
+  #home .btn-lets-go {
+    font-weight: 500;
+    font-size: 1.8vw; /* Increased font size for screens between 768px and 992px */
+    letter-spacing: 0.05em;
+    display: inline-block;
+    padding: 1% 4%;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #007bff;
+    border: 0.1rem solid rgb(21, 21, 21);
+    text-decoration: none;
+    margin-top: 0.2%;
+  }
+
+  /* Adjust image margin */
+  #home .img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0; /* Reset the top margin for the image */
+  }
+
+  /* Adjust margin for the header image */
+  #home .header-img {
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}

@@ -1,0 +1,271 @@
+/* Custom CSS for Services Page */
+.my-5 {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container-fluid.mb-5 {
+  margin-bottom: 5rem;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  height: 600px;
+}
+
+.card-img-top {
+  height: 25rem;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #6c757d;
+  margin-bottom: 1.25rem; /* Adjusted to rem */
+}
+
+.card-body .bookservice-btn,
+.card-body .read-more {
+  /* Button styles without hover */
+  border: none;
+  border-radius: 0.25rem; /* Adjusted to rem */
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition for background-color and text color */
+  padding: 0.4375rem 0.9375rem; /* Adjusted to rem */
+  font-size: 1rem; /* Adjusted to rem */
+}
+
+.card-body .bookservice-btn {
+  background-color: #007bff;
+  color: white;
+  margin-left: 1.375rem;
+}
+
+.card-body .read-more {
+  background-color: #fc354c;
+  color: white;
+  margin-left: 3.7rem; /* Adjusted to rem */
+  margin-right: 1.375rem;
+}
+
+/* Add hover styles for the buttons */
+.card-body .bookservice-btn:hover {
+  background-color: #0056b3; /* New background color on hover */
+  color: #fff; /* New text color on hover */
+}
+
+.card-body .read-more:hover {
+  background-color: #d32f44; /* New background color on hover */
+  color: #fff; /* New text color on hover */
+}
+
+/* Media Query for screens less than 600px wide */
+/* Media Query for screens less than 600px wide */
+@media (max-width: 600px) {
+  .my-5 {
+    margin-top: 2rem; /* Adjusted top margin */
+  }
+
+  .card {
+    height: auto;
+    padding-bottom: 3rem; /* Adjusted for smaller screens */
+  }
+
+  .card-img-top {
+    height: 100%; /* Ensure the entire image is visible */
+    object-fit: cover; /* Maintain aspect ratio while covering the container */
+    object-position: top; /* Align images at the top */
+  }
+
+  .card-title {
+    font-size: 1.2rem; /* Adjusted for smaller screens */
+  }
+
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    font-size: 1.1rem; /* Adjusted font size */
+    /* Add some left margin */
+    margin-right: 0.5rem; /* Add some right margin */
+    padding: 0.45rem 0.5rem; /* Adjusted padding */
+  }
+  .card-body .read-more {
+    margin-left: 3rem;
+  }
+  .card-body .bookservice-btn {
+    margin-left: 1.8rem;
+  }
+}
+
+/* Media Query for screens between 601px and 768px wide */
+@media (min-width: 601px) and (max-width: 768px) {
+  /* Center-align the container content */
+  .container-fluid.mb-5 {
+    text-align: center;
+  }
+
+  /* Center-align the cards within the container */
+  .card {
+    display: inline-block;
+    margin: 0 1rem; /* Add horizontal margin between cards */
+    vertical-align: top; /* Align cards at the top */
+  }
+
+  /* Adjusted styles for card content */
+  .card-title {
+    font-size: 1.2rem; /* Adjusted font size */
+  }
+
+  .card-body {
+    text-align: center; /* Center-align card body content */
+  }
+  .row.justify-content-center {
+    justify-content: center; /* Center the cards horizontally */
+  }
+  /* Buttons side by side */
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    font-size: 1.1rem; /* Adjusted font size */
+    margin: 0.5rem; /* Add margin to separate buttons */
+    padding: 0.45rem 0.5rem; /* Adjusted padding */
+    display: inline-block; /* Display buttons inline */
+  }
+}
+
+@media (max-width: 590px) {
+  /* Other CSS rules... */
+
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    margin-left: 5rem; /* Add some left margin */
+    margin-right: 0.5rem; /* Add some right margin */
+    padding: 0.55rem 0.5rem; /* Adjusted padding */
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin-top: 0.5rem; /* Add some top margin to separate buttons */
+  }
+}
+
+@media (max-width: 527px) {
+  /* Other CSS rules... */
+
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    margin-left: 4.5rem; /* Add some left margin */
+    margin-right: 0.5rem; /* Add some right margin */
+    padding: 0.45rem 0.5rem; /* Adjusted padding */
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin-top: 0.5rem; /* Add some top margin to separate buttons */
+  }
+}
+
+/* Media Query for screens between 768px and 993px wide */
+@media (min-width: 768px) and (max-width: 993px) {
+  /* Center-align the container content */
+  .container-fluid.mb-5 .row.gy-4 {
+    justify-content: center; /* Center-align the cards horizontally */
+  }
+
+  /* Adjust the width of each card to occupy 50% of the available width with spacing */
+  .col-md-4.col-10.mx-auto {
+    flex: 0 0 calc(50% - 20px); /* Each card occupies 50% width with spacing */
+    max-width: calc(50% - 20px); /* Each card's max-width is 50% with spacing */
+  }
+
+  /* Add min-height to the card to ensure buttons stay within the card */
+  .card {
+    min-height: 680px; /* Adjust this value as needed */
+  }
+
+  /* Adjust the read-more and bookservice buttons */
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    font-size: 1rem; /* Adjust font size for readability */
+    padding: 0.5rem 1rem; /* Adjust padding for button size */
+    display: block; /* Display buttons as block elements (stacked) */
+    width: calc(
+      100% - 40px
+    ); /* Make buttons take up full width of the card with spacing */
+    text-align: center; /* Center-align button text */
+    margin-left: 20px; /* Add spacing from the left side */
+    margin-right: 20px; /* Add spacing from the right side */
+    margin-bottom: 10px;
+  }
+}
+
+/* Media Query for screens between 993px and 1280px wide */
+@media (min-width: 993px) and (max-width: 1490px) {
+  /* Center-align the container content */
+  .container-fluid.mb-5 .row.gy-4 {
+    justify-content: center; /* Center-align the cards horizontally */
+  }
+
+  /* Adjust the width of each card to occupy 50% of the available width with spacing */
+  .col-md-4.col-10.mx-auto {
+    flex: 0 0 calc(50% - 20px); /* Each card occupies 50% width with spacing */
+    max-width: calc(50% - 20px); /* Each card's max-width is 50% with spacing */
+  }
+
+  /* Add min-height to the card to ensure buttons stay within the card */
+  .card {
+    min-height: 680px; /* Adjust this value as needed */
+  }
+
+  /* Adjust the read-more and bookservice buttons */
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    font-size: 0.9rem; /* Adjust font size for readability */
+    padding: 0.5rem 1rem; /* Adjust padding for button size */
+    display: block; /* Display buttons as block elements (stacked) */
+    width: calc(
+      100% - 40px
+    ); /* Make buttons take up full width of the card with spacing */
+    text-align: center; /* Center-align button text */
+    margin-left: auto; /* Center the buttons horizontally */
+    margin-right: auto; /* Center the buttons horizontally */
+    margin-bottom: 10px;
+  }
+}
+
+/* Add media query for screens less than 445px wide */
+@media (max-width: 445px) {
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    display: block; /* Stack the buttons */
+    margin-left: auto; /* Center the buttons horizontally */
+    margin-right: auto; /* Center the buttons horizontally */
+    margin-top: 0.5rem; /* Add some top margin to separate buttons */
+    white-space: nowrap; /* Prevent text from breaking into two lines */
+    font-size: 0.8rem; /* Reduce font size for smaller screens */
+    padding: 0.5rem 0.5rem; /* Add padding to the buttons */
+  }
+}
+
+/* Add media query for screens less than 400px wide */
+@media (max-width: 400px) {
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    font-size: 0.8rem; /* Further reduce font size for smaller screens */
+    padding: 0.45rem 0.4rem; /* Further increase padding to prevent overlap */
+  }
+}
+
+@media (max-width: 350px) {
+  .card-body .bookservice-btn,
+  .card-body .read-more {
+    font-size: 0.5rem; /* Further reduce font size for smaller screens */
+    padding: 0.55rem 1rem; /* Further increase padding to prevent overlap */
+  }
+}

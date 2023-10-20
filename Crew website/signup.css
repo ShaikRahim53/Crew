@@ -1,0 +1,79 @@
+.container {
+  max-width: 700px; /* Reduce the maximum width */
+  margin: 1rem auto; /* Adjusted margin on all sides */
+  margin-bottom: 6rem;
+  padding: 1rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.col-image {
+  flex: 1;
+}
+a {
+  text-decoration: none;
+}
+.col-form {
+  flex: 1;
+  padding: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  margin-left: 15rem; /* Adjusted margin */
+  margin-top: 6rem; /* Adjusted margin */
+  font-size: 1rem; /* Reduced font size */
+}
+#signupbtn {
+  margin-top: 1rem; /* Adjusted margin */
+  padding: 0.5rem 2rem;
+  margin-left: 6rem;
+  font-size: 1rem; /* Reduced font size */
+}
+
+@media screen and (max-width: 600px) {
+  .col-image {
+    display: none;
+  }
+
+  .container {
+    max-width: 75%; /* Adjusted for full width on small screens */
+    padding: 0rem;
+    margin-top: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2); /* Add box-shadow */
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .btn-primary {
+    margin-left: 1rem;
+    margin-top: 6rem;
+    font-size: 1rem;
+    text-align: left; /* Align the primary button to the left on small screens */
+  }
+
+  #signupbtn {
+    margin-left: 0;
+    font-size: 1rem;
+    text-align: center; /* Align the login button to the left on small screens */
+  }
+
+  #goback {
+    margin-left: 0; /* Align the "Back to Home" button to the left */
+    margin-top: 0.5rem;
+    font-size: 1rem;
+  }
+}

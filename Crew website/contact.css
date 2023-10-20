@@ -1,0 +1,170 @@
+/* Reset some default browser styles */
+h1,
+h2,
+p,
+label,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: Arial, sans-serif;
+}
+
+/* Apply styles to the header */
+#contact header {
+  padding: 2% 0;
+}
+#contact #contactheading {
+  color: black;
+}
+
+#contact header h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Apply styles to the container */
+#contact .container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+/* Apply styles to the contact form section */
+#contact .container .contact-form {
+  padding: 2%;
+  border-radius: 2%;
+  box-shadow: 0 0 2% rgba(0, 0, 0, 0.2);
+}
+
+#contact h2 {
+  margin-bottom: 1%;
+}
+
+#heading {
+  margin-left: 1.4rem;
+}
+
+#contact .container .contact-form label {
+  font-weight: bold;
+}
+
+#contact .container .contact-form .form-group {
+  margin-bottom: 2%;
+}
+
+#contact .container .contact-form textarea {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  font-size: 1rem;
+  resize: vertical;
+  color: #333;
+}
+#contact .container .contact-form input[name="name"],
+#contact .container .contact-form input[name="email"] {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 2%;
+  font-size: 1rem;
+  color: #333;
+}
+
+#contact .container .contact-form button[type="submit"] {
+  background-color: #0069d9;
+  color: #fff;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+#contact .container .contact-form button[type="submit"]:hover {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  padding: 1% 2%;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Apply styles to the contact details section */
+#contact .contact-details {
+  background-color: #fff;
+  padding: 2%;
+  border-radius: 2%;
+  box-shadow: 0 0 2% rgba(0, 0, 0, 0.2);
+}
+
+#contact .contact-details h2 {
+  margin-top: 0;
+}
+
+#contact .contact-details p {
+  margin: 1% 0;
+}
+
+/* Apply styles to the footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1% 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* Adjust styles for smaller screens here */
+  #contact header {
+    padding: 5% 0;
+  }
+  #contact .container {
+    padding: 0 5%;
+  }
+  #contact .container .contact-form {
+    padding: 5%;
+    border-radius: 2%;
+  }
+  #contact h2 {
+    margin-bottom: 3%;
+  }
+  #contact .container .contact-form label {
+    font-weight: bold;
+  }
+  #contact .container .contact-form .form-group {
+    margin-bottom: 5%;
+  }
+  #contact .container .contact-form textarea {
+    padding: 2%;
+    border-radius: 2%;
+  }
+  #contact .container .contact-form input[name="name"],
+  #contact .container .contact-form input[name="email"] {
+    padding: 2%;
+    border-radius: 2%;
+  }
+  #contact .container .contact-form button[type="submit"] {
+    padding: 2% 4%;
+    border-radius: 0.25rem;
+  }
+  #contact .container .contact-form button[type="submit"]:hover {
+    padding: 2% 4%;
+    border-radius: 0.25rem;
+  }
+  #contact .contact-details {
+    padding: 5%;
+    border-radius: 2%;
+  }
+  #contact .contact-details h2 {
+    margin-top: 0;
+  }
+  #contact .contact-details p {
+    margin: 3% 0;
+  }
+  footer {
+    padding: 2% 0;
+  }
+}
